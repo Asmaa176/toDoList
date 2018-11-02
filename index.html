@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+
+<head>
+        <meta charset="utf-8">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Pacifico"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body onload="loadPage()">
+        <div class="container">
+                <div class="list-body">
+
+                        <h1>Things To Do :- </h1>
+                        <hr> 
+
+                        <div id="things-to-do" >
+
+                                <div id="text-input" class="write-div">
+                                        <input class="text-area" type="text" placeholder="add new task" >
+                                        <button class="btn"><i class="fas fa-plus-square icone"></i></button>
+                                </div>
+
+                                <div id="to-do" class="write-div">
+                                        <fieldset>
+                                                <legend><h2> what to do </h2></legend>
+                                                <ul class="task"></ul>
+                                        </fieldset>
+                                </div>
+
+                                <div id="done" class="write-div">
+                                        <fieldset>
+                                                <legend><h2> it is Done </h2></legend>
+                                                <ul class="done"></ul>
+                                        </fieldset>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
